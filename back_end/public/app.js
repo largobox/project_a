@@ -1,1 +1,0 @@
-console.log('FRONT END: APP INIT')
