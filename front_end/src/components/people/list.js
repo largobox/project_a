@@ -6,6 +6,8 @@ import Loader from '../base/loader'
 import { fetchPeople } from '../../ac'
 import { peopleSelector } from '../../selectors'
 
+import TestComp from '../test_material_ui'
+
 class PeopleList extends React.Component {
     componentDidMount () {
         this.props.fetchPeople()
@@ -14,6 +16,7 @@ class PeopleList extends React.Component {
     get main () {
         return (
             <div>
+                <TestComp />
                 <h2>Список людей</h2>
                 <ul>
                     {
