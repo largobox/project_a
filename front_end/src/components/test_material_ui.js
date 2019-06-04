@@ -1,6 +1,8 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import { Grid, Button } from '@material-ui/core'
+import { Grid, Button, Typography, Link } from '@material-ui/core'
+import DeleteIcon from '@material-ui/icons/Delete'
+import { Link as RouterLink } from 'react-router-dom'
 
 const styles = theme => ({
     'my-class': {
@@ -12,8 +14,10 @@ function TestComp (props) {
     const { classes } = props
 
     return (
-        <Grid container color="primary">
-            <Grid item xs={6}>
+        <Grid container>
+            <Grid item xs={2}>
+            </Grid>
+            <Grid item xs={4}>
                 <Button variant="contained" color="primary">Well 1</Button>
             </Grid>
             <Grid item xs={6}>

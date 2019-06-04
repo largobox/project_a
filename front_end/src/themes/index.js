@@ -1,12 +1,15 @@
 import { createMuiTheme } from '@material-ui/core/styles'
-import lime from '@material-ui/core/colors/lime'
+import deepOrange from '@material-ui/core/colors/deepOrange'
 
 const theme = createMuiTheme({
     palette: {
-        primary: { main: lime[200] },
-        secondary: { main: lime[200] }
+        primary: {
+            main: '#7cb342',
+        },
+        secondary: deepOrange,
     },
     typography: { useNextVariants: true }
 })
 
 export default theme
+
